@@ -6,9 +6,9 @@ import Link from "next/link";
 const Navbar = () => {
     return (
         <>
-            <div className="px-32 py-4 flex justify-between">
+            <div className="px-48 py-2 flex justify-between">
                 <div className="">
-                    <Image src={'/logo-light.png'} alt={''} width={50} height={50} />
+                    <Link href={``}><Image src={'/logo-light.png'} alt={''} width={50} height={50} /></Link>
                 </div>
                 <div className="list-none flex my-auto gap-8">
                     <Link href={``}>About</Link>
