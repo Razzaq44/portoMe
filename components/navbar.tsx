@@ -27,12 +27,13 @@ const Navbar = () => {
         return () => {
             document.removeEventListener('click', handleClickOutside);
         };
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [isOpen]);
 
     return (
         <>
-            <nav className="sticky top-0 w-full z-50 backdrop-blur-sm items-center py-2">
-                <div className="max-w-screen-xl flex flex-wrap items-center justify-between m-auto">
+            <nav className="sticky top-0 w-full z-50 backdrop-blur-sm items-center py-2 lg:mb-20">
+                <div className="flex flex-wrap items-center justify-between m-auto">
                     <Link href={``} className='flex gap-2'>
                         <Image src={'/logo-light.png'} alt={''} width={50} height={50} />
                     </Link>
@@ -51,7 +52,6 @@ const Navbar = () => {
                             <Link href={`/`} className='p-2 hover:bg-primary rounded-md px-4 hover:text-background' onClick={handleItemClick}>About</Link>
                         </ul>
                     </div>
-
                 </div>
             </nav>
         </>
