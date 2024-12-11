@@ -32,7 +32,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="sticky top-0 w-full z-50 backdrop-blur-sm items-center py-2 lg:mb-20">
+            <nav className="sticky top-0 w-full z-50 backdrop-blur-sm items-center py-2 lg:mb-20 px-12 sm:px-24 lg:px-48">
                 <div className="flex flex-wrap items-center justify-between m-auto">
                     <Link href={``} className='flex gap-2'>
                         <Image src={'/logo-light.png'} alt={''} width={50} height={50} />
@@ -47,9 +47,10 @@ const Navbar = () => {
                     </div>
                     <div className={`items-center justify-between ${isOpen ? 'block' : 'hidden'} w-full md:flex md:w-auto md:order-1`} id="navbar-sticky">
                         <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
-                            <Link href={`/`} className='p-2 hover:bg-primary rounded-md px-4 hover:text-background' onClick={handleItemClick}>About</Link>
-                            <Link href={`/`} className='p-2 hover:bg-primary rounded-md px-4 hover:text-background' onClick={handleItemClick}>About</Link>
-                            <Link href={`/`} className='p-2 hover:bg-primary rounded-md px-4 hover:text-background' onClick={handleItemClick}>About</Link>
+                            <Link href={`#home`} className='p-2 hover:bg-primary rounded-md px-4 hover:text-background' onClick={handleItemClick}>Home</Link>
+                            <Link href={`#myProject`} className='p-2 hover:bg-primary rounded-md px-4 hover:text-background' onClick={handleItemClick}>My Project</Link>
+                            <Link href={`#aboutMe`} className='p-2 hover:bg-primary rounded-md px-4 hover:text-background' onClick={handleItemClick}>About Me</Link>
+                            <Link href={`#contact`} className='p-2 hover:bg-primary rounded-md px-4 hover:text-background' onClick={handleItemClick}>Contact</Link>
                         </ul>
                     </div>
                 </div>
