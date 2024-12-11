@@ -38,9 +38,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Navbar />
           <div className="w-full flex-grow">
             <div className="mx-12 sm:mx-24 lg:mx-48">
-              <Navbar />
               {children}
             </div>
           </div>
