@@ -15,7 +15,7 @@ import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
 export default function Home() {
   return (
     <>
-      <div className="font-mono">
+      <div className="font-serif">
         <section id="home">
           <div className="xl:flex xl:gap-20 gap-8">
             <div className="mx-auto flex justify-center p-12">
