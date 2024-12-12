@@ -56,7 +56,7 @@ export default function Home() {
           <div className="my-10 lg:my-20">
             <h1 className="text-xl md:text-3xl mb-4 font-bold">My Project</h1>
             <div className="mt-2">
-              <Accordion type="single" className="w-full" defaultValue="dkampus">
+              <Accordion type="multiple" className="w-full" defaultValue={['dkampus']}>
                 <AccordionItem value="dkampus">
                   <AccordionTrigger className="text-lg lg:text-xl font-semibold hover:no-underline">DKampus - Backend</AccordionTrigger>
                   <AccordionContent>
@@ -78,12 +78,12 @@ export default function Home() {
         {/* NEXT III */}
 
         <section className="" id="aboutMe">
-          <div className="my-10 lg:py-20">
+          <div className="my-10 lg:my-20">
             <h1 className="text-xl md:text-3xl mb-4 font-bold text-end">About Me</h1>
             <p className="mb-6 text-justify indent-8">One of my most rewarding experiences was leading the backend development for Dkampus, an online food delivery platform supporting local businesses around Telkom University. By integrating Firebase with Laravel, I helped implement a real-time live chat feature, bridging communication gaps between users and couriers. In addition to development, I&apos;ve served as a Lab Assistant, mentoring students in web programming, mobile app development, and software testing. I&apos;ve guided them in building projects using frameworks like Laravel and tools like Flutter and Firebase, ensuring they understand the importance of quality in every step of development. With proficiency in HTML, PHP, JavaScript, Flutter, and more, I&apos;m always eager to take on new challenges and contribute to innovative projects that make a difference.</p>
-            <h1 className="text-lg font-semibold text-center mb-3">My Experience</h1>
+            <h1 className="text-lg font-semibold text-center mb-3">- My Experience -</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 mb-6 gap-y-4 gap-x-6">
-              <div className="shadow-lg p-4 rounded-lg shadow-primary/5 border-2 border-primary/5">
+              <div className="shadow-lg p-6 rounded-lg bg-primary/5 shadow-primary/5 border-2 border-primary/5">
                 <h1 className="font-semibold">Backend Developer - Dkampus Project</h1>
                 <h4 className="italic mt-1">September 2023 - June 2024</h4>
                 <ul className="list-disc ml-5 mt-2">
@@ -91,7 +91,7 @@ export default function Home() {
                   <li>Integrated Firebase with Laravel to implement a real-time live chat feature, enhancing communication between users and couriers.</li>
                 </ul>
               </div>
-              <div className="shadow-lg p-4 rounded-lg shadow-primary/5 border-2 border-primary/5">
+              <div className="shadow-lg p-6 rounded-lg bg-primary/5 shadow-primary/5 border-2 border-primary/5">
                 <h1 className="font-semibold">Lab Assistant - Telkom University</h1>
                 <h4 className="italic mt-1">September 2023 - Present</h4>
                 <ul className="list-disc ml-5 mt-2">
@@ -102,11 +102,11 @@ export default function Home() {
               </div>
 
             </div>
-            <div className="flex-wrap md:justify-between items-center md:flex w-full" id="contact">
-              <div className="text-center">
+            <div className="flex-wrap md:justify-between items-center md:flex w-full relative" id="contact">
+              <div className="text-center p-4">
                 <Link href={`https://drive.google.com/file/d/14-SPUdnhmHoV2Xx9fAJ0J6pVaxNsieC6/view?usp=sharing`} target="_blank" className="my-auto text-blue-400">Download My CV <ArrowCircleDownIcon /></Link>
               </div>
-              <div className="flex gap-2 items-center justify-center mt-3 md:mt-0">
+              <div className="flex gap-2 items-center justify-center mt-3 md:mt-0 p-4">
                 <Link href={`https://api.whatsapp.com/send/?phone=6281220104061&text&type=phone_number&app_absent=0`} target="_blank">
                   <Button className="bg-accent/50" variant={`default`} size={`icon`}>
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
